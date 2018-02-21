@@ -152,6 +152,26 @@ app.get('/viderlaliste', (req, res) => {
 })
 
 
+////////////////////////////////////////////////////////////AFFICHER UN PROFIL
+app.get('/afficher/:id', (req, res) => {
+
+ 	let id = req.params.id
+
+ 	db.collection('adresse').findOne({"_id": ObjectID(req.params.id)}, (err, resultat) => {
+
+		if (err) return console.log(err)
+		res.redirect('/membres')
+ 	})
+})
+
+
+////////////////////////////////////////////////////////////RECHERCHER UN MEMBRE
+
+
+
+
+
+
 /////////////////////////////////////////////////////////FUB
 let db // variable qui contiendra le lien sur la BD
 
