@@ -159,8 +159,9 @@ app.get('/afficher/:id', (req, res) => {
 
  	db.collection('adresse').findOne({"_id": ObjectID(req.params.id)}, (err, resultat) => {
 
+
 		if (err) return console.log(err)
-		res.redirect('/membres')
+		res.render('profil.ejs', {membres: resultat})
  	})
 })
 

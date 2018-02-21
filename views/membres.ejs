@@ -42,15 +42,11 @@
 
  			<% } %>
 
-
-
-
-
  			<% adresses.forEach(elm => {%>
 
 
  			<tr>
- 				<td contenteditable="true"><%= elm._id %></td>
+ 				<td><a href="http://localhost:8081/afficher/<%= elm._id %>"><%= elm._id %></a></td>
  				<td contenteditable="true"><%= elm.prenom %></td>
  				<td contenteditable="true"><%= elm.nom %></td>
  				<td contenteditable="true"><%= elm.telephone %></td>
