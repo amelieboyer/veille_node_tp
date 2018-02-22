@@ -78,10 +78,13 @@ app.get('/trier/:cle/:ordre', (req, res) => {
  			ordre = 'asc';
  		}
 
+
  		res.render('membres.ejs', {adresses: resultat, test:ordre})
 
- 
+ 			console.log(resultat)
+ 			console.log('**************')
  	})
+
 
  })
 
@@ -95,8 +98,8 @@ app.post('/modifier', (req, res) => {
  		var oModif = {
 
  			"_id": ObjectID(req.body['_id']), 
+ 			prenom: req.body.prenom,
  			nom: req.body.nom,
- 			prenom:req.body.prenom, 
  			telephone:req.body.telephone,
  			courriel:req.body.courriel
 
