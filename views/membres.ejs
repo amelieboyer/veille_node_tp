@@ -11,7 +11,7 @@
 	<h2>Membres</h2>
 	<form action= "/recherche" name="recherche" method="POST">
 		<input type='text' id="barreRecherche" name="recherche" placeholder="Rechercher un membre...">
-		<input type="submit" value="Chercher">
+		<input type="submit" class="chercher" value="Chercher">
  	</form>
  		<table class="tableau">
 
@@ -71,18 +71,18 @@
  		 <label>Nom: <input type= "text" name= "nom"><br></label>
  		 <label>Telephone:<input type= "text" name= "telephone"><br></label>
  		<label>Courriel: <input type= "text" name="courriel"><br></label>
- 		<input type="submit" value="Ajouter un membre">
+ 		<input type="submit" class="ajout" value="Ajouter un membre">
  	  </form>
  	  	<a class="retour" href="http://localhost:8081">Retour</a>
 
 
  	   <form id="mon_formulaire" class="formulaire" action="/modifier" method="POST">
- 	   	 <label>ID: <input type = "text" name = "_id"><br></label>
-		 <label>Prénom: <input type = "text" name = "prenom"><br></label>
- 		 <label>Nom: <input type = "text" name = "nom"><br></label>
- 		 <label>Telephone:<input type = "text" name = "telephone"><br></label>
- 		<label>Courriel: <input type = "text" name="courriel"><br></label>
- 		<input type="submit" class="ajout" value= "Ajouter un membre">
+ 	   	 <label>ID: <input type= "text" name="_id"><br></label>
+		 <label>Prénom: <input type="text" name="prenom"><br></label>
+ 		 <label>Nom: <input type="text" name="nom"><br></label>
+ 		 <label>Telephone:<input type="text" name="telephone"><br></label>
+ 		<label>Courriel: <input type="text" name="courriel"><br></label>
+ 		<input type="submit" value="Ajouter un membre">
  	  </form>
  	<script type="text/javascript">
  	  	(function(){
@@ -100,13 +100,13 @@
 					 let courriel = laLigne.children[4].innerHTML
 
 					let elmForm = document.getElementById('mon_formulaire')
-					 console.log(elmForm.tagName)
-					 let elmInput = elmForm.querySelectorAll('input')
-					 elmInput[0].value = id
-					 elmInput[2].value = nom
-					 elmInput[1].value = prenom
-					 elmInput[3].value = telephone
-					 elmInput[4].value = courriel
+					console.log(elmForm.tagName)
+					let elmInput = elmForm.querySelectorAll('input')
+					elmInput[0].value = id
+					elmInput[2].value = nom
+					elmInput[1].value = prenom
+					elmInput[3].value = telephone
+					elmInput[4].value = courriel
 
 					elmForm.submit()
 

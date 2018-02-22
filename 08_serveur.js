@@ -80,9 +80,6 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 
 
  		res.render('membres.ejs', {adresses: resultat, test:ordre})
-
- 			console.log(resultat)
- 			console.log('**************')
  	})
 
 
@@ -95,7 +92,7 @@ app.post('/modifier', (req, res) => {
  	
  		console.log('sauvegarde') 
 
- 		var oModif = {
+ 		let oModif = {
 
  			"_id": ObjectID(req.body['_id']), 
  			prenom: req.body.prenom,
