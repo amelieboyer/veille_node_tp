@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
- <meta charset="UTF-8">
- <title>Membres</title>
- <link rel="stylesheet" type="text/css" href="/css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Questrial" rel="stylesheet">
-</head>
+<%- include('composants/head.ejs') %>
 <body>
+<%- include('composants/entete.ejs') %>
 	<h1>Carnet d'adresse</h1>
 	<h2>Membres</h2>
 	<form action= "/recherche" name="recherche" method="POST">
@@ -66,18 +62,18 @@
  		</table>
 	  <h2>Formulaire</h2>
 
-	 <form class="formulaire" action= "/ajouter" method="GET">
-		 <label>Prénom: <input type= "text" name="prenom"><br></label>
- 		 <label>Nom: <input type= "text" name= "nom"><br></label>
- 		 <label>Telephone:<input type= "text" name= "telephone"><br></label>
- 		<label>Courriel: <input type= "text" name="courriel"><br></label>
- 		<input type="submit" class="ajout" value="Ajouter un membre">
+	 <form class="formulaire" action="/ajouter" method="GET">
+		 <label>Prénom: <input type="text" class="bonFormulaire" name="prenom"><br></label>
+ 		 <label>Nom: <input type="text" class="bonFormulaire" name= "nom"><br></label>
+ 		 <label>Telephone:<input type="text" class="bonFormulaire" name= "telephone"><br></label>
+ 		<label>Courriel: <input type="text" class="bonFormulaire" name="courriel"><br></label>
+ 		<input type="submit" class="ajout" class="bonFormulaire" value="Ajouter un membre">
  	  </form>
  	  	<a class="retour" href="http://localhost:8081">Retour</a>
 
 
  	   <form id="mon_formulaire" class="formulaire" action="/modifier" method="POST">
- 	   	 <label>ID: <input type= "text" name="_id"><br></label>
+ 	   	 <label>ID: <input type="text" name="_id"><br></label>
 		 <label>Prénom: <input type="text" name="prenom"><br></label>
  		 <label>Nom: <input type="text" name="nom"><br></label>
  		 <label>Telephone:<input type="text" name="telephone"><br></label>
