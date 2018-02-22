@@ -127,7 +127,7 @@ label {
 			display: flex;
 			justify-content: center;
 			padding: 10px;
-			margin-bottom: 15px;
+			margin: 0 auto;
 
 
 		}
@@ -146,6 +146,7 @@ label {
 		    margin-left:auto;
 		    margin-right:auto;
 		    margin-bottom: 8px;
+		    margin-top: 8px;
 
 		}
 
@@ -155,6 +156,7 @@ label {
 #mon_formulaire {
 	
 	visibility: hidden;
+	margin: 0;
 }
 
 .ajouter, .supprimer, .sauver {
@@ -192,5 +194,54 @@ footer {
 	font-size: 1.2em;
 	background-color: #000000;
 	color: #ffffff;
+
+}
+
+/*--------------------------MEDIA QUERIES-------------------------------------*/
+
+
+@media screen and (max-width: 640px) {
+	
+	
+	h1, h2, footer {
+		
+		display: flex;
+		justify-content: center;
+	}
+
+	nav ul {
+		
+		width: 100%;
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 375px){
+		
+	nav ul li {
+		
+		flex-wrap: nowrap;
+
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+	h1, h2, footer {
+			
+		display: flex;
+		justify-content: center;
+	}
+		
+	nav ul li {
+			
+		flex-wrap: nowrap;
+
+	}
+
 
 }
