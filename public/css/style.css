@@ -1,5 +1,5 @@
 body {
-  background-color: #E8E8E8;
+  background-image: url('images/texture2.png');
 }
 h1 {
   display: flex;
@@ -38,6 +38,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   border-collapse: collapse;
+  background-color: #ffffff;
 }
 .tableau td,
 .tableau th {
