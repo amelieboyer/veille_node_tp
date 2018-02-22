@@ -2,6 +2,7 @@
 <html lang="fr">
 <%- include('composants/head.ejs') %>
 <body> 
+<%- include('composants/entete.ejs') %>
 <h1>Profil</h1>
 
 
@@ -13,7 +14,14 @@
 				 <% if (noLigne==0) {%>
 				
 				 	<tr>
-	 					<% noLigne++ %>
+	 					<% noLigne++ 
+
+	 						for (p in element){ %>
+
+	 									<th><%= p %></th>
+	 							<% } %>
+
+	 					%>
 	 				</tr>
 
 	 			<% } %>
@@ -32,6 +40,8 @@
  			</tr>
  			<% }) %>
  </table>
+
+ <a class="retour" href="http://localhost:8081/membres">Retour</a>
 
 <%- include('composants/footer.ejs') %>
 
