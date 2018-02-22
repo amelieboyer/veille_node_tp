@@ -38,13 +38,13 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   border-collapse: collapse;
-  background-color: #ffffff;
 }
 .tableau td,
 .tableau th {
   border: 1px dotted #000000;
   padding: 15px;
   font-family: 'Questrial';
+  background-color: #ffffff;
 }
 label {
   font-weight: bold;
