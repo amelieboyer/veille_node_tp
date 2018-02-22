@@ -88,7 +88,7 @@ app.get('/trier/:cle/:ordre', (req, res) => {
 ////////////////////////////////////////////////////////////MODIFIER
 app.post('/modifier', (req, res) => {
 
-	console.log(req)
+	console.log(req.body['_id'])
  	
  		console.log('sauvegarde') 
 

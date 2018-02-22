@@ -1,20 +1,82 @@
 
 "use strict"
 let prenom = [
-				'Amélie',
-				'Jessica',
-				'Gabriel',
-				'Olivier',
-				'Nathan'
+				 	'Luc',
+                     'Éric',
+                     'François',
+                     'Lyne',
+                     'Carolle',
+                     'Sylvie',
+                     'Renée',
+                     'Mathieu',
+                     'Eddy',
+                     'Jean',
+                     'Paul',
+                     'Gustave',
+                     'Rose-Lyne',
+                     'Rose-Lise',
+                     'Rose',
+                     'Xavier',
+                     'Olivier',
+                     'Michel',
+                     'Jean-François',
+                     'Bob',
+                     'Gil',
+                     'Martin',
+                     'Pierre',
+                     'Maxime',
+                     'Léo',
+                     'Léo-Paul',
+                     'Paul',
+                     'Alix',
+                     'Alixe',
+                     'Chantal',
+                     'Christelle',
+                     'Katy',
+                     'Johanne',
+                     'Béatrice',
+                     'Noémie',
+                     'Coralie',
+                     'Pénéloppe',
+                     'Charlotte'
 
 			];
 
 let nom = [
-				'Boyer',
-				'Rock',
-				'Deschamps',
-				'Doyle-Turcotte',
-				'Sioui'
+				'Martin',
+                     'Marchand',
+                     'Trudeau',
+                     'Lafontaine',
+                     'Gravel',
+                     'Huberdeau',
+                     'Massé',
+                     'St-Pierre',
+                     'Dandurand',
+                     'Hamel',
+                     'Larose',
+                     'Ambroise',
+                     'Kuvel',
+                     'Lamarre',
+                     'Sorel',
+                     'Frapier',
+                     'Archer',
+                     'Dejoie',
+                     'Moïse',
+                     'Fortin',
+                     'Stien',
+                     'Gagnon',
+                     'Chédiac',
+                     'Roy',
+                     'Gagner',
+                     'Larue',
+                     'Lafortune',
+                     'Roffi',
+                     'Cartier',
+                     'Maisonneuve',
+                     'Levesque',
+                     'Talon',
+                     'Bellemarre',
+                     'Mercier'
 
 			];
 
@@ -29,9 +91,17 @@ let telephone = [
 
 let courriel = [
 
-				'@gmail.com',
-				'@hotmail.fr',
-				'@yahoo.ca'
+				     '@hotmail.com',
+                     '@videotron.com',
+                     '@gmail.com',
+                     '@yahoo.com',
+                     '@cmaisonneuve.qc.ca',
+                     '@webfaction.com',
+                     '@cvsyc.com',
+                     '@bell.ca',
+                     '@umontreal.ca',
+                     '@skillscanada.ca',
+                     '@inforoutefpt.com'
 
 			];
 

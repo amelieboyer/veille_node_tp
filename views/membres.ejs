@@ -9,6 +9,7 @@
 <body>
 	<h1>Carnet d'adresse</h1>
 	<h2>Membres</h2>
+	<input type='text' name="recherche" placeholder="Rechercher...">
  		<table class="tableau">
 
  			<% if(typeof test == 'undefined') {
@@ -46,7 +47,7 @@
 
 
  			<tr>
- 				<td><a href="http://localhost:8081/afficher/<%= elm._id %>"><%= elm._id %></a></td>
+ 				<td><%= elm._id %></td>
  				<td contenteditable="true"><%= elm.prenom %></td>
  				<td contenteditable="true"><%= elm.nom %></td>
  				<td contenteditable="true"><%= elm.telephone %></td>
@@ -62,12 +63,12 @@
  		</table>
 	  <h2>Formulaire</h2>
 
-	 <form class="formulaire" action = "http://127.0.0.1:8081/ajouter" method = "GET">
-		 <label>Prénom: <input type = "text" name = "prenom"><br></label>
- 		 <label>Nom: <input type = "text" name = "nom"><br></label>
- 		 <label>Telephone:<input type = "text" name = "telephone"><br></label>
- 		<label>Courriel: <input type = "text" name="courriel"><br></label>
- 		<input type="submit" value = "Ajouter un membre">
+	 <form class="formulaire" action= "http://127.0.0.1:8081/ajouter" method = "GET">
+		 <label>Prénom: <input type= "text" name="prenom"><br></label>
+ 		 <label>Nom: <input type= "text" name= "nom"><br></label>
+ 		 <label>Telephone:<input type= "text" name= "telephone"><br></label>
+ 		<label>Courriel: <input type= "text" name="courriel"><br></label>
+ 		<input type="submit" value="Ajouter un membre">
  	  </form>
  	  	<a class="retour" href="http://localhost:8081">Retour</a>
 
@@ -87,12 +88,7 @@
 			 for (elm of elmSauver)
 			 {
 				 elm.addEventListener('click', function(){
-					 /* 
-					 console.log(this
-					 .parentNode
-					 .parentNode
-					 .children[1].innerHTML)
-					 */
+				
 					 let laLigne = this.parentNode.parentNode
 					 let id = laLigne.children[0].innerHTML
 					 let nom = laLigne.children[2].innerHTML
