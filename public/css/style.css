@@ -13,6 +13,9 @@ h2 {
 }
 nav ul {
   list-style-type: none;
+  background-color: #000000;
+  padding: 10px;
+  margin: 0 auto;
 }
 nav ul li {
   display: inline;
@@ -23,7 +26,7 @@ nav ul li a {
   border-bottom: 1px solid transparent;
   font-family: 'Questrial';
   font-size: 1.2em;
-  color: #000000;
+  color: #ffffff;
   pointer: cursor;
   transition: all ease-in-out 1s;
 }
