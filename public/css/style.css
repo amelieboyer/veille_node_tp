@@ -54,26 +54,6 @@ label {
   width: 300px;
   margin-top: 30px;
 }
-input[type=text]#barreRecherche {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-input[type=submit].chercher {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 20px;
-  font-family: 'Questrial';
-  font-size: 1em;
-  text-align: center;
-  padding: 5px;
-  background-color: #000000;
-  color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8px;
-}
 .formulaire input[type=text].bonFormulaire {
   margin: 8px;
 }
@@ -88,14 +68,28 @@ input[type=submit].chercher {
   margin-left: auto;
   margin-right: auto;
 }
+.formRecherche input[type=text]#barreRecherche {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.formRecherche input[type=submit].chercher {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  font-family: 'Questrial';
+  font-size: 1em;
+  text-align: center;
+  padding: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+}
 #mon_formulaire {
   visibility: hidden;
-}
-footer {
-  display: flex;
-  font-family: 'Questrial';
-  justify-content: center;
-  font-size: 1.2em;
 }
 .ajouter,
 .supprimer,
@@ -116,4 +110,10 @@ footer {
   margin-top: 10px;
   color: #000000;
   padding: 10px;
+}
+footer {
+  display: flex;
+  font-family: 'Questrial';
+  justify-content: center;
+  font-size: 1.2em;
 }
