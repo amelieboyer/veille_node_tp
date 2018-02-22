@@ -9,7 +9,10 @@
 <body>
 	<h1>Carnet d'adresse</h1>
 	<h2>Membres</h2>
-	<input type='text' id="barreRecherche" name="recherche" placeholder="Rechercher...">
+	<form action= "/recherche" name="recherche" method="POST">
+		<input type='text' id="barreRecherche" name="recherche" placeholder="Rechercher un membre...">
+		<input type="submit" value="Chercher">
+ 	</form>
  		<table class="tableau">
 
  			<% if(typeof test == 'undefined') {
@@ -63,7 +66,7 @@
  		</table>
 	  <h2>Formulaire</h2>
 
-	 <form class="formulaire" action= "http://127.0.0.1:8081/ajouter" method = "GET">
+	 <form class="formulaire" action= "/ajouter" method="GET">
 		 <label>Prénom: <input type= "text" name="prenom"><br></label>
  		 <label>Nom: <input type= "text" name= "nom"><br></label>
  		 <label>Telephone:<input type= "text" name= "telephone"><br></label>
@@ -73,13 +76,13 @@
  	  	<a class="retour" href="http://localhost:8081">Retour</a>
 
 
- 	   <form id="mon_formulaire" class="formulaire" action = "/modifier" method = "POST">
+ 	   <form id="mon_formulaire" class="formulaire" action="/modifier" method="POST">
  	   	 <label>ID: <input type = "text" name = "_id"><br></label>
 		 <label>Prénom: <input type = "text" name = "prenom"><br></label>
  		 <label>Nom: <input type = "text" name = "nom"><br></label>
  		 <label>Telephone:<input type = "text" name = "telephone"><br></label>
  		<label>Courriel: <input type = "text" name="courriel"><br></label>
- 		<input type="submit" value = "Ajouter un membre">
+ 		<input type="submit" class="ajout" value= "Ajouter un membre">
  	  </form>
  	<script type="text/javascript">
  	  	(function(){

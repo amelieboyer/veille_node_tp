@@ -2,7 +2,37 @@
 <html lang="fr">
 <%- include('composants/head.ejs') %>
 <body> 
-<h1>allo</h1>
+<h1>Profil</h1>
+
+
+<table class="tableau">
+
+ 			<% let noLigne = 0 %>
+ 			<% for(element of adresses) {%>
+			 
+				 <% if (noLigne==0) {%>
+				
+				 	<tr>
+	 					<% noLigne++ %>
+	 				</tr>
+
+	 			<% } %>
+
+ 			<% } %>
+
+ 			<% adresses.forEach(elm => {%>
+
+
+ 			<tr>
+ 				<td><%= elm._id %></td>
+ 				<td><%= elm.prenom %></td>
+ 				<td><%= elm.nom %></td>
+ 				<td><%= elm.telephone %></td>
+ 				<td><%= elm.courriel %></td>
+ 			</tr>
+ 			<% }) %>
+ </table>
+
 <%- include('composants/footer.ejs') %>
 
 </body>

@@ -152,25 +152,20 @@ app.get('/viderlaliste', (req, res) => {
 })
 
 
-////////////////////////////////////////////////////////////AFFICHER UN PROFIL
-app.get('/afficher/:id', (req, res) => {
+////////////////////////////////////////////////////////////AFFICHER/RECHERCHER UN PROFIL
+app.post('/recherche', (req, res) => {
 
- 	let id = req.params.id
+ 	let rechercher = req.body.recherche;
 
- 	db.collection('adresse').findOne({"_id": ObjectID(req.params.id)}, (err, resultat) => {
+ 	db.collection('adresse').find({$or: [{"prenom": rechercher}, {"nom" : rechercher}, {"telephone" : rechercher}, {"courriel" : rechercher}]}).toArray(function(err, resultat){
 
 
 		if (err) return console.log(err)
-		res.render('profil.ejs', {membres: resultat})
+		res.render('profil.ejs', {adresses: resultat})
+
+
  	})
 })
-
-
-////////////////////////////////////////////////////////////RECHERCHER UN MEMBRE
-
-
-
-
 
 
 /////////////////////////////////////////////////////////FUB

@@ -61,7 +61,7 @@ input[type=text]#barreRecherche {
   margin-left: 850px;
   margin-bottom: 15px;
 }
-input[type=submit] {
+input[type=submit].ajout {
   border-radius: 20px;
   font-family: 'Questrial';
   font-size: 1em;
