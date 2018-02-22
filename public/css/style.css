@@ -56,6 +56,11 @@ label {
 input {
   margin: 10px;
 }
+input[type=text]#barreRecherche {
+  padding: 10px;
+  margin-left: 850px;
+  margin-bottom: 15px;
+}
 input[type=submit] {
   border-radius: 20px;
   font-family: 'Questrial';
