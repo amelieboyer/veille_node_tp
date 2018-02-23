@@ -22,15 +22,17 @@ h1 {
   justify-content: center;
   font-family: 'Permanent Marker';
 }
-.titreAccueil {
-  margin-bottom: 634px;
-}
 h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Questrial';
+}
+p {
+  display: flex;
   justify-content: center;
   font-family: 'Questrial';
 }
