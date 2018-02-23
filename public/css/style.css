@@ -1,3 +1,15 @@
+@keyframes animMenu {
+  from {
+    background-color: #ffffff;
+    opacity: 0;
+    padding: 11px;
+  }
+  to {
+    background-color: #ffffff;
+    opacity: 1;
+    padding: 11px;
+  }
+}
 body {
   background-image: url('images/texture2.png');
 }
@@ -45,6 +57,8 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
   text-decoration: underline;
+  animation-name: animMenu;
+  animation-duration: 2s;
 }
 .tableau {
   display: -webkit-box;
