@@ -2,12 +2,20 @@ body {
   background-image: url('images/texture2.png');
 }
 h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: 'Permanent Marker';
 }
 h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: 'Questrial';
 }
@@ -28,6 +36,7 @@ nav ul li a {
   font-size: 1.2em;
   color: #ffffff;
   pointer: cursor;
+  -webkit-transition: all ease-in-out 1s;
   transition: all ease-in-out 1s;
 }
 nav ul li a:hover {
@@ -35,7 +44,11 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 .tableau {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border-collapse: collapse;
 }
@@ -73,13 +86,20 @@ label {
   margin-right: auto;
 }
 .formRecherche input[type=text]#barreRecherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 10px;
   margin: 0 auto;
 }
 .formRecherche input[type=submit].chercher {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   border-radius: 20px;
   font-family: 'Questrial';
@@ -108,7 +128,11 @@ label {
   text-decoration: underline;
 }
 .retour {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-decoration: none;
   font-family: 'Questrial';
@@ -118,8 +142,12 @@ label {
   padding: 10px;
 }
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: 'Questrial';
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 1.2em;
   background-color: #000000;
@@ -130,7 +158,11 @@ footer {
   h1,
   h2,
   footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   nav ul {
@@ -139,6 +171,7 @@ footer {
 }
 @media screen and (max-width: 375px) {
   nav ul li {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
 }
@@ -146,10 +179,15 @@ footer {
   h1,
   h2,
   footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   nav ul li {
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
 }
