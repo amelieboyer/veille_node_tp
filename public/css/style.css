@@ -54,7 +54,7 @@ p {
 }
 nav ul {
   list-style-type: none;
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 10px;
   margin: 0 auto;
 }
@@ -67,7 +67,7 @@ nav ul li a {
   border-bottom: 1px solid transparent;
   font-family: 'Questrial';
   font-size: 1.2em;
-  color: #ffffff;
+  color: #000000;
   pointer: cursor;
   -webkit-transition: all ease-in-out 1s;
   transition: all ease-in-out 1s;
@@ -121,6 +121,7 @@ label {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 .formRecherche input[type=text]#barreRecherche {
   display: -webkit-box;
