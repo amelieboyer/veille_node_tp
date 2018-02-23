@@ -1,3 +1,15 @@
+@-webkit-keyframes animMenu {
+  from {
+    background-color: #ffffff;
+    opacity: 0;
+    padding: 11px;
+  }
+  to {
+    background-color: #ffffff;
+    opacity: 1;
+    padding: 11px;
+  }
+}
 @keyframes animMenu {
   from {
     background-color: #ffffff;
@@ -32,7 +44,11 @@ h2 {
   font-family: 'Questrial';
 }
 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-family: 'Questrial';
 }
@@ -59,7 +75,9 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
   text-decoration: underline;
+  -webkit-animation-name: animMenu;
   animation-name: animMenu;
+  -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 .tableau {

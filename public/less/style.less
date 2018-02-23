@@ -1,3 +1,21 @@
+@-webkit-keyframes animMenu {
+	
+	from{
+		background-color: #ffffff;
+		opacity: 0;
+		padding: 11px;
+	}
+
+	to {
+
+		background-color: #ffffff;
+		opacity: 1;
+		padding: 11px;
+	}
+
+
+}
+
 @keyframes animMenu {
 	
 	from{
@@ -30,8 +48,8 @@ h1 {
 	
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	font-family : 'Permanent Marker';
 
 }
@@ -39,78 +57,80 @@ h1 {
 h2 {
 	
 	display: -webkit-box;
-	
 	display: -ms-flexbox;
-	
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	font-family : 'Questrial';
 
 }
 
 p{
 	
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	font-family: 'Questrial';
 }
 
 nav {
 	
-		ul {
+	ul {
 			
-			list-style-type: none;
-			background-color: #000000;
-			padding: 10px;
-			margin: 0 auto;
+		list-style-type: none;
+		background-color: #000000;
+		padding: 10px;
+		margin: 0 auto;
 
-		}
+	}
 
-		 ul li{
+	ul li{
 	
-			display: inline;
-			padding: 5px;
+		display: inline;
+		padding: 5px;
 
 			
-		}
+	}
 
-		ul li a {
+	ul li a {
 	
-			text-decoration : none;
-		 	border-bottom: 1px solid transparent;
-			font-family: 'Questrial';
-			font-size: 1.2em;
-			color: #ffffff;
-			pointer: cursor;
-			-webkit-transition: all ease-in-out 1s;
-			transition: all ease-in-out 1s;
+		text-decoration : none;
+		border-bottom: 1px solid transparent;
+		font-family: 'Questrial';
+		font-size: 1.2em;
+		color: #ffffff;
+		pointer: cursor;
+		-webkit-transition: all ease-in-out 1s;
+		transition: all ease-in-out 1s;
 
 		}
 
 
-		ul li a:hover {
+	ul li a:hover {
 			
-			color: red;
-			text-decoration: underline;
-			animation-name: animMenu;
-    		animation-duration: 2s;
-		}
+		color: red;
+		text-decoration: underline;
+		-webkit-animation-name: animMenu;
+		animation-name: animMenu;
+    	-webkit-animation-duration: 2s;
+    	animation-duration: 2s;
+	}
 
 }
 
 
 .tableau{
 	
-	display: -webkit-box;
-	
-	display: -ms-flexbox;
-	
+	display: -webkit-box;	
+	display: -ms-flexbox;	
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	border-collapse: collapse;
 
 
@@ -168,42 +188,38 @@ label {
 
 .formRecherche {
 
-		input[type=text]#barreRecherche {
+	input[type=text]#barreRecherche {
 			
-			display: -webkit-box;
-			
-			display: -ms-flexbox;
-			
-			display: flex;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-			padding: 10px;
-			margin: 0 auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		padding: 10px;
+		margin: 0 auto;
 
 
 		}
 
-		input[type=submit].chercher{
+	input[type=submit].chercher{
 
-			display: -webkit-box;
-
-			display: -ms-flexbox;
-
-			display: flex;
-			-ms-flex-wrap: wrap;
-			    flex-wrap: wrap;
-			border-radius: 20px;
-			font-family : 'Questrial';
-			font-size: 1em;
-			text-align: center;
-			padding: 5px;
-			background-color: #000000;
-			color: #ffffff;
-		    margin-left:auto;
-		    margin-right:auto;
-		    margin-bottom: 8px;
-		    margin-top: 8px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		border-radius: 20px;
+		font-family : 'Questrial';
+		font-size: 1em;
+		text-align: center;
+		padding: 5px;
+		background-color: #000000;
+		color: #ffffff;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom: 8px;
+		margin-top: 8px;
 
 		}
 
@@ -232,13 +248,11 @@ label {
 .retour {
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	text-decoration: none;
 	font-family: 'Questrial';
 	font-size: 1.2em;
@@ -252,14 +266,12 @@ label {
 footer {
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;	
 	font-family: 'Questrial';
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	font-size: 1.2em;
 	background-color: #000000;
 	color: #ffffff;
@@ -274,14 +286,12 @@ footer {
 	
 	h1, h2, footer {
 		
-		display: -webkit-box;
-		
-		display: -ms-flexbox;
-		
+		display: -webkit-box;	
+		display: -ms-flexbox;	
 		display: flex;
 		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 	}
 
 	nav ul {
@@ -299,8 +309,7 @@ footer {
 	nav ul li {
 		
 		-ms-flex-wrap: nowrap;
-		
-		    flex-wrap: nowrap;
+		flex-wrap: nowrap;
 
 	}
 
@@ -310,21 +319,18 @@ footer {
 
 	h1, h2, footer {
 			
-		display: -webkit-box;
-			
-		display: -ms-flexbox;
-			
+		display: -webkit-box;	
+		display: -ms-flexbox;		
 		display: flex;
 		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 	}
 		
 	nav ul li {
 			
 		-ms-flex-wrap: nowrap;
-			
-		    flex-wrap: nowrap;
+		flex-wrap: nowrap;
 
 	}
 
