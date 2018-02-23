@@ -10,6 +10,9 @@ h1 {
   justify-content: center;
   font-family: 'Permanent Marker';
 }
+.titreAccueil {
+  margin-bottom: 634px;
+}
 h2 {
   display: -webkit-box;
   display: -ms-flexbox;
