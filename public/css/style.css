@@ -96,6 +96,9 @@ nav ul li a:hover {
   font-family: 'Questrial';
   background-color: #ffffff;
 }
+.tableau .nomColonne {
+  text-decoration: none;
+}
 label {
   font-weight: bold;
   font-size: 1.2em;
